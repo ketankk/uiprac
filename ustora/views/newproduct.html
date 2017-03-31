@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/jquery.flexdatalist.min.js"></script>	
+<link rel="stylesheet" href="../css/jquery.flexdatalist.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+<script src="../../Html/controllers/jsvar.js"></script>
+<script src="../../Html/controllers/mainCtrl.js"></script>
+
+<script src="../../Html/controllers/prodctrl.js"></script>
+<body ng-app="mainApp"ng-controller="prodctrl">
+<form>
+<div class="col-sm-6">
+   <label for="Table Name">Topic<sup><span
+      class="glyphicon glyphicon-asterisk red" aria-hidden="true"></span></sup></label>
+</div>
+<div class="form-group col-sm-7">
+
+<input name='language12' type="text" list="tags" multiple='multiple' data-min-length='1'
+   class="form-control ng-pristine ng-invalid ng-invalid-required flexdatalist"
+   id="Topic" placeholder="Tags" ng-model="prodtags">
+   <datalist id="tags"><option value="abc1"><option value="abc2">
+						<option value="abc3"><option value="abc4"></datalist>
+<br><br>
+<input typ="text" ng-model="prodName"><br><br>
+<input typ="text" ng-model="prodCat"><br><br>
+<input typ="text" ng-model="prodSubCat"><br><br>
+<input type="submit" ng-click="addProduct()">
+</form>
+</body>

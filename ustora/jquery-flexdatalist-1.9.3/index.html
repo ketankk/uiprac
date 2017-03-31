@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="jquery.flexdatalist.min.js"></script>	
+<link rel="stylesheet" href="jquery.flexdatalist.min.css">
+<div class="col-sm-6">
+							<label for="Table Name">Topic<sup><span
+									class="glyphicon glyphicon-asterisk red" aria-hidden="true"></span></sup></label>
+						</div>
+						<div class="form-group col-sm-7">
+							<input name='language12' type="text" list="topics" multiple='multiple' class="flexdatalist" data-min-length='1'
+								class="form-control ng-pristine ng-invalid ng-invalid-required flexdatalist"
+								id="Topic" placeholder="Topic" ng-model="editDatas.Topic" ng-focus="updateTopics(editDatas.Hostname,editDatas.Port)"
+								required="required">
+						<datalist id="topics"><option value="abc1"><option value="abc2">
+						<option value="abc3"><option value="abc4"></datalist>

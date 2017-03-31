@@ -26,14 +26,14 @@ mainApp.controller("rvw",function($scope,$http,$location,$window){
 		});
 		
 	}
-	$scope.allReview=function(){
+	$scope.allReview=function(id){
 		
 		url='/v1.0/allReview'
 		$http({
 			metho:'GET',
 			url:url,
 			data:id,
-			headers:headerObjs
+			headers:headerObj
 		}).success(function(data,status){
 		$scope.allReview=data;
 		}).error(function(data,status){
